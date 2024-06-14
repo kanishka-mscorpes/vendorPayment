@@ -56,7 +56,7 @@ const SideBar = ({ setShowSideBar, showSideBar, items, items1 }) => {
     <Sider
       breakpoint="lg"
       theme="light"
-      // collapsed={true}
+      collapsed={true}
       // collapsedWidth="80px"
       onBreakpoint={(broken) => {
         console.log(broken);
