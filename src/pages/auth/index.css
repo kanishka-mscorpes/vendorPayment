@@ -1,0 +1,15 @@
+.highlight {
+  @extend %fx;
+  background-image: linear-gradient(transparent calc(100% - 0.7em), #d5f4f0 0);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.underline {
+  @extend %fx;
+  background-image: linear-gradient(
+    transparent calc(100% - 0.05em),
+    #ff7c88 0.05em
+  );
+}
