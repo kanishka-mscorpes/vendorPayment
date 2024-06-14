@@ -10,6 +10,7 @@ import {
 import {
   Button,
   Col,
+  Divider,
   Flex,
   Input,
   Layout,
@@ -104,13 +105,7 @@ const SideBar = ({ setShowSideBar, showSideBar, items, items1 }) => {
           mode="inline"
           // triggerSubMenuAction="hover"
         />{" "}
-        <Menu
-          theme="light"
-          mode="inline"
-          // defaultSelectedKeys={["1"]}
-          items={items1}
-          style={{ borderRadius: 5 }}
-        />
+        <Divider />
       </Flex>
     </Sider>
   );

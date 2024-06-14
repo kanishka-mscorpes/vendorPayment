@@ -79,7 +79,7 @@ const ProtectedLayout = () => {
                   setShowSideBar((open) => !open);
                 }}
                 style={{
-                  color: "black",
+                  color: "white",
                   marginLeft: 12,
                   fontSize: window.innerWidth > 1600 && "1rem",
                 }}
@@ -112,14 +112,14 @@ const ProtectedLayout = () => {
                   style={{ width: 200, color: "white" }}
                   options={sessionOptions}
                   bordered={false}
-                  placeholder="Select Session"
+                  // placeholder="Select Session"
                   onChange={(value) => handleSelectSession(value)}
                   // value={user.session}
                 />
               </div>
             </Space>
             <Col span={3}>
-              <Typography.Text style={{ color: "black" }}>
+              <Typography.Text style={{ color: "white" }}>
                 {/* <UserOutlined /> */}
                 {user?.name ?? ""}
               </Typography.Text>

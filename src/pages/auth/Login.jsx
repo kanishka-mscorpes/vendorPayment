@@ -12,6 +12,7 @@ import { Car } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
+import login from "./../../assets/login.jpg";
 
 function Login() {
   const [form] = Form.useForm();
@@ -59,7 +60,9 @@ function Login() {
                   // justifyContent: "center",
                   // alignItems: "center",
                 }}
-              ></Card>
+              >
+                <img src={login} style={{ height: "33rem" }} />
+              </Card>
             </Col>
             <Col span={9}>
               <Card

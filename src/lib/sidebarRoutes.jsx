@@ -55,8 +55,9 @@
 import { Link } from "react-router-dom";
 import { Select } from "antd";
 import { BookmarkFilledIcon } from "@radix-ui/react-icons";
-import { FaMoneyBill } from "react-icons/fa";
+import { FaHome, FaMoneyBill } from "react-icons/fa";
 import { PiInvoiceBold } from "react-icons/pi";
+import { HomeIcon } from "lucide-react";
 // import routeConstants from "./routeConstants";
 export const items = (user) => [
   // getItem("Dashboard", "A"),
@@ -176,15 +177,12 @@ export const items = (user) => [
   //       ),
   //     ]
   //   ),
+  getItem(<Link to="/app">Home</Link>, "/app", <FaHome />),
   getItem("Bills", "A", <FaMoneyBill />, [
     getItem(<Link to="/app/bill/Create">Create Payment Bill</Link>, "A1"),
-    getItem(<Link to="/app/bill/Scheduled">Scheduled </Link>, "A2"),
+    getItem(<Link to="/app/bill/Scheduled">Register </Link>, "A2"),
   ]),
-  getItem(
-    <Link to="/app/payments/paymentRequest">Payments Register</Link>,
-    "B1",
-    <PiInvoiceBold />
-  ),
+
   // getItem("Payments Register", "B", <PiInvoiceBold />, [
   //   getItem(<Link to="/app/bill/Create">Create Payment Bill</Link>, "B1"),
   //   getItem(<Link to="/app/inv/fgInward/completed">Scheduled </Link>, "B2"),

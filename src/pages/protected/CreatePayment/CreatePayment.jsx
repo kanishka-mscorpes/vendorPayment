@@ -1,12 +1,19 @@
 import { Button, Card, Col, Form, Input, Row, Typography } from "antd";
 import React from "react";
 import TaxDetails from "../../../components/shared/TaxDetails";
-import { CheckIcon, PaperclipIcon } from "lucide-react";
+import {
+  ArrowBigLeft,
+  ArrowBigLeftDash,
+  ArrowBigLeftDashIcon,
+  CheckIcon,
+  PaperclipIcon,
+} from "lucide-react";
 
 function CreatePayment() {
   return (
     <div>
       <Row justify="center" style={{ height: "100%" }}>
+        {/* <Button icon={ArrowBigLeftDash}></Button> */}
         <Col span={23} style={{ height: "100%" }}>
           <Card style={{ height: "100%" }}>
             <Row justify="space-between">
@@ -41,11 +48,11 @@ function CreatePayment() {
             </Row>
             <Form layout="vertical" style={{ marginTop: 8 }}>
               <Row gutter={[10, 0]}>
-                <Col span={5}>
+                {/* <Col span={5}>
                   <Form.Item name="name" label=" Vendor Name">
                     <Input />
                   </Form.Item>
-                </Col>
+                </Col> */}
                 <Col span={5}>
                   <Form.Item name="name" label="Branch">
                     <Input />
@@ -72,12 +79,12 @@ function CreatePayment() {
                   </Form.Item>
                 </Col>
                 <Col span={5}>
-                  <Form.Item name="name" label="Invoice Date">
+                  <Form.Item name="name" label="Date">
                     <Input />
                   </Form.Item>
-                </Col>
+                </Col>{" "}
                 <Col span={5}>
-                  <Form.Item name="name" label="Date">
+                  <Form.Item name="name" label="Requested Amount">
                     <Input />
                   </Form.Item>
                 </Col>
