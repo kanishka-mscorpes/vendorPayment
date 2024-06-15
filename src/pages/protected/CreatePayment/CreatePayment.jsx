@@ -39,7 +39,25 @@ function CreatePayment() {
                   Save
                 </Button>
               </div>
-              {/* </Col> */}
+              {/* </Col> */}{" "}
+              <Col span={24} style={{ backgroundColor: "rgb(223 244 242)" }}>
+                <Typography.Text style={{ color: "#30ce30" }} strong>
+                  Vendor Details
+                </Typography.Text>
+              </Col>
+              <Col span={24}>
+                <Row>
+                  <Col span={5}>
+                    <Typography.Text>Vendor </Typography.Text>
+                  </Col>
+                  <Col span={5}>
+                    <Typography.Text>PO Date </Typography.Text>
+                  </Col>
+                  <Col span={5}>
+                    <Typography.Text>PO ID </Typography.Text>
+                  </Col>
+                </Row>
+              </Col>
               <Col span={24} style={{ backgroundColor: "rgb(223 244 242)" }}>
                 <Typography.Text style={{ color: "#30ce30" }} strong>
                   Client Details
@@ -78,11 +96,11 @@ function CreatePayment() {
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col span={5}>
+                {/* <Col span={5}>
                   <Form.Item name="name" label="Date">
                     <Input />
                   </Form.Item>
-                </Col>{" "}
+                </Col>{" "} */}
                 <Col span={5}>
                   <Form.Item name="name" label="Requested Amount">
                     <Input />
@@ -103,9 +121,19 @@ function CreatePayment() {
                 </Col>
                 {/* <Col></Col> */}
               </Row>
-              <Row justify="space-between">
-                <Col span={4} style={{ overflowY: "auto" }}>
-                  <TaxDetails title="Tax Details" summary={[]} />
+              <Row justify="space-between" style={{ marginTop: "10em" }}>
+                <Col span={5} style={{ overflowY: "auto" }}>
+                  <Card>
+                    <Col span={12}>
+                      <Typography.Text strong>Vendor Details</Typography.Text>
+                    </Col>
+                    <Col span={12}>
+                      <Typography.Text strong>PO Id</Typography.Text>
+                    </Col>
+                    <Col span={12}>
+                      <Typography.Text strong>PO Date</Typography.Text>
+                    </Col>
+                  </Card>
                 </Col>
                 <Col span={4} style={{ overflowY: "auto" }}>
                   <TaxDetails title="Tax Details" summary={[]} />
